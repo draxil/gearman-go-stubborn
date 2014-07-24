@@ -10,22 +10,21 @@ Currently, a default error handler for https://github.com/mikespook/gearman-go w
 
 Basic usage:
   
-  
-  import (
-    "github.com/mikespook/gearman-go/worker"
-    "github.com/draxil/gearman-go-stubborn/worker/stubborn"
-  )
-  
-  // then:
-  w := worker.New(worker.Unlimited)
-  w.ErrorHandler = MakeErrorHandler( nil )
+    import (
+      "github.com/mikespook/gearman-go/worker"
+      "github.com/draxil/gearman-go-stubborn/worker/stubborn"
+    )
+    
+    // then:
+    w := worker.New(worker.Unlimited)
+    w.ErrorHandler = MakeErrorHandler( nil )
   
 Or for the lazy:
 
-  import "github.com/draxil/gearman-go-stubborn/worker/stubborn"
-  
-  w := NewStubbornWorker(worker.Unlimited, nil)
+    import "github.com/draxil/gearman-go-stubborn/worker/stubborn"
+    
+    w := NewStubbornWorker(worker.Unlimited, nil)
   
 Which will invoke the creation of the worker and assign the error handler for you. You can pass in settings to influence the behaviour of the handler and/or layer on your own error handler for non D/C errors. 
 
-See the godoc for full details (or the tests if you are brave).
+See the [godoc](https://godoc.org/github.com/draxil/gearman-go-stubborn/worker/stubborn) for details (or the tests if you are brave).
