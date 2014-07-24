@@ -144,6 +144,7 @@ func TestBasicDisconnectWithStubbornErrh(t *testing.T) {
 }
 
 func TestBasicDisconnectWithStubbornWorker(t *testing.T) {
+	check_gearman_is_dead();
 	go run_gearman()
 	<-gearman_ready
 
@@ -213,6 +214,7 @@ func TestBasicDisconnectWithStubbornWorker(t *testing.T) {
 }
 
 func TestBasicDisconnectWithShouldReconnectHandler(t *testing.T) {
+	check_gearman_is_dead();
 	go run_gearman()
 	<-gearman_ready
 	
@@ -338,6 +340,7 @@ func TestBasicDisconnectWithShouldReconnectHandler(t *testing.T) {
 	kill_gearman <- true
 }
 func TestBasicDisconnectWithSubErrHandler(t *testing.T) {
+	check_gearman_is_dead();
 	go run_gearman()
 	<-gearman_ready
 	
