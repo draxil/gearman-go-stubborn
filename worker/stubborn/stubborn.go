@@ -3,7 +3,6 @@ package stubborn
 import (
 	"github.com/mikespook/gearman-go/worker"
 	"time"
-	"log"
 )
 
 
