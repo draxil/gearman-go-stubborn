@@ -21,7 +21,10 @@ Basic usage:
   
 Or for the lazy:
 
-    import "github.com/draxil/gearman-go-stubborn/worker/stubborn"
+    import (
+      "github.com/mikespook/gearman-go/worker"
+      "github.com/draxil/gearman-go-stubborn/worker/stubborn"
+    )
     
     w := NewStubbornWorker(worker.Unlimited, nil)
   
