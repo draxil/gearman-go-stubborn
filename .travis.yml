@@ -2,5 +2,7 @@ language: go
 go:
   - 1.4
 sudo: false
-addons.apt.packages:
-  - gearman-job-server
+addons:
+  apt:
+    packages:
+      - gearman-job-server
