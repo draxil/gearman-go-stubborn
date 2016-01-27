@@ -3,7 +3,7 @@ go:
   - 1.4
 sudo: true
 before_install:
-  - sudo apt-add-repository universe
+  - sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) universe"
   - sudo apt-get install -y gearman-job-server
 # When travis whitelists package:
 # addons:
