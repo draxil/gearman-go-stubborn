@@ -17,7 +17,7 @@ Basic usage:
     
     // then:
     w := worker.New(worker.Unlimited)
-    w.ErrorHandler = MakeErrorHandler( nil )
+    w.ErrorHandler = stubborn.MakeErrorHandler( nil )
   
 Or for the lazy:
 
