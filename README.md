@@ -26,7 +26,7 @@ Or for the lazy:
       "github.com/draxil/gearman-go-stubborn/worker/stubborn"
     )
     
-    w := NewStubbornWorker(worker.Unlimited, nil)
+    w := stubborn.NewStubbornWorker(worker.Unlimited, nil)
   
 Which will invoke the creation of the worker and assign the error handler for you. You can pass in settings to influence the behaviour of the handler and/or layer on your own error handler for non D/C errors. 
 
